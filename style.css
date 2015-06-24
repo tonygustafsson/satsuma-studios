@@ -1,0 +1,501 @@
+@-webkit-keyframes bounceInLeft {
+  0%, 60%, 75%, 90%, 100% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+            transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-3000px, 0, 0);
+            transform: translate3d(-3000px, 0, 0);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(25px, 0, 0);
+            transform: translate3d(25px, 0, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+            transform: translate3d(-10px, 0, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(5px, 0, 0);
+            transform: translate3d(5px, 0, 0);
+  }
+
+  100% {
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@keyframes bounceInLeft {
+  0%, 60%, 75%, 90%, 100% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+            transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-3000px, 0, 0);
+            transform: translate3d(-3000px, 0, 0);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(25px, 0, 0);
+            transform: translate3d(25px, 0, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+            transform: translate3d(-10px, 0, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(5px, 0, 0);
+            transform: translate3d(5px, 0, 0);
+  }
+
+  100% {
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@font-face {
+	font-family: 'icomoon';
+	src:url('fonts/icomoon.eot?grdfme');
+	src:url('fonts/icomoon.eot?#iefixgrdfme') format('embedded-opentype'),
+		url('fonts/icomoon.woff?grdfme') format('woff'),
+		url('fonts/icomoon.ttf?grdfme') format('truetype'),
+		url('fonts/icomoon.svg?grdfme#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-menu:before {
+	content: "\e9bd";
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+}
+
+header {
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 2;
+	display: inline-block;
+	height: 80px;
+	width: 80%;
+	color: #fff;
+	margin: 0 10%;
+	padding: 0;
+	border-bottom: 1px #381F08 solid;
+	background: #000;
+}
+
+.menu-button {
+	float: right;
+	width: 60px;
+	padding-right: 16px;
+	padding-top: 7px;
+	color: #fff;
+	font-size: 3em;
+	cursor: pointer;
+	text-decoration: none;
+	z-index: 2;
+	position: relative;
+}
+
+.menu {
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	transition: transform .2s linear;
+	transform: translate3d(100%,0,0);
+	-webkit-transition: -webkit-transform .2s linear;
+	-webkit-transform: translate3d(100%,0,0);
+	background: rgba(0,0,0,.9);
+	color: #fff;
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 25%;
+	text-align: center;
+	height: 100%;
+	font-weight: bold;
+	font-size: 4vw;
+	font-family: 'Open Sans', Arial, Verdana;
+	letter-spacing: -0.25vw;
+	z-index: 1;
+}
+
+.active-menu {
+	transform: translate3d(0,0,0);
+	-webkit-transform: translate3d(0,0,0);
+}
+
+.menu a {
+	transition: text-shadow .25s;
+	-webkit-transition: text-shadow .25s;
+	color: #fff;
+	text-decoration: none;
+	outline: 0;
+}
+
+.menu a:hover {
+	text-shadow: 0px 0px 12px #fff;
+}
+
+.menu ul {
+	list-style: none;
+	line-height: 2em;
+	padding: 0;
+}
+
+.satsuma-logo {
+	float: left;
+	padding-top: 10px;
+	padding-left: 80px;
+}
+
+h1 {
+	display: inline-block;
+	margin: 0;
+	padding-top: 10px;
+	padding-left: 30px;
+}
+
+h1 a {
+	font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+	letter-spacing: .15em;
+	text-transform: uppercase;
+	text-shadow: 0px 0px 4px rgba(255,255,255,0.8);
+	color: #fff;
+	text-decoration: none;
+	transition: text-shadow .25s;
+	-webkit-transition: text-shadow .25s;
+}
+
+h1 a:hover {
+	text-shadow: 0px 0px 12px #fff;
+}
+
+h2, h3 {
+	font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+	letter-spacing: .1em;
+	text-transform: uppercase;
+	text-shadow: 2px 2px 6px rgba(255,255,255,0.8);
+	font-size: 200%;
+	padding: 0 10%;
+}
+
+article {
+	margin: 0 10%;
+	padding: 0;
+	width: 80%;
+}
+
+.heading {
+	position: relative;
+	margin-top: -2em;
+}
+
+.heading span {
+	display: block;
+	position: absolute;
+	color: #fff;
+	font-size: 75px;
+	font-weight: bold;
+	font-size: 6.3vw;
+	font-family: 'Open Sans', Arial, Verdana;
+	letter-spacing: -0.55vw;
+	margin: 0 10%;
+	padding: 0;
+	top: 40%;
+	text-shadow: 2px 2px 0px #F99C0C;
+	transition: transform 1s;
+	-webkit-transition: -webkit-transform 1s;
+}
+
+.heading span:hover, .heading span:active {
+	-webkit-transform: scale(1.03) rotate(1deg);
+	transform: scale(1.03) rotate(1deg);
+}
+
+.heading h2 {
+	text-indent: -999em;
+}
+
+.heading img {
+	min-width: 100%;
+	max-width: 100%;
+}
+
+article p {
+	padding: 0 10%;
+	font-family: "Open Sans", Georgia, Serif;
+	line-height: 1.5em;
+	color: #111;
+	text-shadow: 1px 1px 1px #f5f5f5;
+}
+
+article p:first-letter {
+	font-size: 150%;
+}
+
+blockquote {
+	font-size: 150%;
+	font-size: 3vw;
+	padding: 0 10%;
+	text-align: center;
+	font-style: italic;
+	text-shadow: 2px 2px 2px #fff;
+	letter-spacing: -2px;
+}
+
+.article-image {
+	display: block;
+	margin: 0 auto;
+	width: 70%;
+}
+
+article ul {
+    list-style-type: none;
+	width: 70%;
+	padding: 0 15%;
+	font-family: "Open Sans", Georgia, Serif;
+	line-height: 1.5em;
+	color: #111;
+	text-shadow: 1px 1px 1px #f5f5f5;
+}
+
+article li {
+	background: url("images/check.png") no-repeat 7px 7px transparent;
+	padding: .25em 2.5em;
+}
+
+a {
+	color: #69340A;
+}
+
+form {
+	width: 75%;
+	margin: 0 15%;
+}
+
+label {
+	display: block;
+	width: 50%;
+	letter-spacing: .1em;
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 130%;
+	border-top-left-radius: 4px;
+	text-indent: .5em;
+	background: #E28710;
+	text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.8);
+	box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5), -1px -1px 1px rgba(0, 0, 0, 0.5)
+}
+
+label[for="message"] {
+	width: 100%;
+}
+
+input[type=text], input[type=email], textarea {
+	font-family: "Open Sans", Georgia, Serif;
+	width: 50%;
+	height: 30px;
+	margin-bottom: 20px;
+	padding: .5em;
+	box-sizing: border-box;
+	border: 1px rgba(0, 0, 0, 0.5) solid;
+	font-size: 80%;
+	background: rgba(255,255,255,.8);
+	box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5), -1px -1px 1px rgba(0, 0, 0, 0.5)
+}
+
+textarea {
+	width: 100%;
+	height: 8em;
+}
+
+input[type=submit] {
+	float: right;
+	background: #E28710;
+	border-radius: 8px;
+	border:1px solid #623f1d;
+	font-size: 100%;
+	padding: .2em .5em;
+}
+
+.footer {
+	text-align: right;
+	font-style: italic;
+	clear: both;
+	padding: 2em 1em;
+}
+
+.footer:first-letter {
+	font-size: 100%;
+}
+
+.noshow {
+	display: none;
+}
+
+.bounceInLeft {
+  -webkit-animation-name: bounceInLeft;
+          animation-name: bounceInLeft;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+@media (max-width: 1024px) {
+	header {
+		height: 50px;
+		width: 100%;
+		margin: 0;
+	}
+	
+	.menu-button {
+		width: 30px;
+		padding-right: 16px;
+		padding-top: 5px;
+		font-size: 2em;
+	}
+	
+	.satsuma-logo {
+		padding-left: 10px;
+		width: 30px;
+		height: 30px;
+	}
+
+	h1 {
+		padding-left: 15px;
+		letter-spacing: .1em;
+		font-size: 160%;
+		padding-top: 5px;
+	}
+
+	h3 {
+		font-size: 100%;
+	}
+
+	.menu {
+		width: 60%;
+		font-size: 8vmin;
+	}
+
+	.heading {
+		margin-top: -4em;
+	}
+
+	.heading span {
+		top: 50%;
+	}
+
+	article {
+		width: 100%;
+		margin: 0;
+	}
+
+	article ul {
+		width: 90%;
+		padding: 0 5%
+	}
+
+	form {
+		width: 90%;
+		margin: 0 5%;
+	}
+
+	input[type=text], input[type=email], textarea, label {
+		width: 100%;
+	}
+	
+	blockquote {
+		font-size: 150%;
+		margin: .5em 0;
+	}
+	
+	.hide-on-mobile {
+		display: none;
+	}
+}
+
+@media print {
+	article {
+		margin: 0;
+		width: 100%;
+	}
+
+	nav, .menu-button {
+		display: none;
+	}
+
+	header {
+		width: 100%;
+		position: static;
+		margin: 0;
+	}
+
+	ul {
+		list-style: circle;
+	}
+
+	li {
+		padding: 0;
+	}
+
+	.heading {
+		position: static;
+	}
+
+	.heading img {
+		display: none;
+	}
+
+	.heading h2 {
+		text-indent: 0;
+		margin: 0;
+		padding-top: 2em;
+	}
+
+	h1 a {
+		color: #000;
+	}
+
+	.hide-on-mobile {
+		display: inline;
+	}
+
+	form {
+		display: none;
+	}
+}
