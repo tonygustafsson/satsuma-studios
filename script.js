@@ -3,9 +3,8 @@
 
 	var menu = document.getElementById('menu'),
 		menuButton = document.getElementById('menu-button'),
-		body = document.getElementsByTagName('body')[0],
-		satsumaLogo = document.getElementById('satsuma-logo');
-
+		body = document.getElementsByTagName('body')[0];
+		
 	menuButton.addEventListener('click', function (e) {
 		e.preventDefault();
 
