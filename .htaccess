@@ -15,13 +15,14 @@
 	ExpiresByType image/jpeg "access plus 1 month"
 	ExpiresByType image/gif "access plus 1 month"
 	ExpiresByType image/png "access plus 1 month"
-	ExpiresByType text/css "access plus 1 months"
+	ExpiresByType image/svg+xml "access plus 1 month"
+	ExpiresByType text/css "access plus 1 month"
 </IfModule>
 
 <IFModule mod_deflate.c>
-	<filesmatch "\.(js|css|html|php)$">
+	<filesmatch "\.(js|css|svg|html)$">
 		SetOutputFilter DEFLATE
 	</filesmatch>
 
-	AddOutputFilterByType DEFLATE text/text text/html text/plain text/xml text/css application/x- javascript application/javascript
+	AddOutputFilterByType DEFLATE text/text text/html text/plain text/xml text/css image/svg+xml application/x-javascript application/javascript
 </IFModule>

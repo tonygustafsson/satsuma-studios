@@ -19,14 +19,6 @@
 	});
 
 	function closeStartMenu (e) {
-		for (var x = 0; x < menu.getElementsByTagName('li').length; x = x + 1) {
-			var menuItem = menu.getElementsByTagName('li')[x].childNodes[0];
-
-			if (e.target === menuItem) {
-				return;
-			}
-		}
-
 		if (e.target === menuButton || e.target.parentNode === menuButton) {
 			return;
 		}
