@@ -10,13 +10,13 @@
 
 		if (menu.className === "menu active-menu") {
 			menu.className = "menu";
-			menuButton.style.zIndex = 2;
+			menuButton.style.zIndex = "2";
 		}
 		else {
 			menu.className = "menu active-menu";
-			menuButton.style.zIndex = 1;
+			menuButton.style.zIndex = "1";
 		}
-	})
+	});
 
 	function closeStartMenu (e) {
 		for (var x = 0; x < menu.getElementsByTagName('li').length; x = x + 1) {
@@ -32,7 +32,7 @@
 		}
 
 		menu.className = "menu";
-		menuButton.style.zIndex = 2;
+		menuButton.style.zIndex = "2";
 	}
 
 	body.addEventListener('click', closeStartMenu);

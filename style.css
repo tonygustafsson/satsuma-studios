@@ -153,7 +153,7 @@ header h1 {
 	text-align: center;
 	height: 100%;
 	font-weight: bold;
-	font-size: 3.5vw;
+	font-size: 2.8vw;
 	font-family: 'Open Sans', Arial, Verdana;
 	letter-spacing: -0.25vw;
 	z-index: 1;
@@ -166,8 +166,7 @@ header h1 {
 
 .menu-list {
 	position: relative;
-	top: 55%;
-	transform: translateY(-55%);
+	top: 25%;
 	margin-top: 0;
 }
 
@@ -189,10 +188,9 @@ header h1 {
 	padding: 0;
 }
 
-.satsuma-logo {
-	float: left;
-	padding-top: 10px;
-	padding-left: 80px;
+.facebook-logo {
+	width: 50px;
+	padding-top: 20px;
 }
 
 h1 {
@@ -226,6 +224,21 @@ h2, h3 {
 	padding: 0 10%;
 }
 
+h3 {
+	text-transform: none;
+	letter-spacing: 0;
+}
+
+.left {
+	float: left;
+	margin-right: 1em;
+}
+
+img {
+	border: 0;
+	max-width: 100%;
+}
+
 article {
 	margin-left: 28%;
 	padding: 0;
@@ -243,12 +256,12 @@ article {
 	color: #fff;
 	font-size: 75px;
 	font-weight: bold;
-	font-size: 5.5vw;
+	font-size: 4.5vw;
 	font-family: 'Open Sans', Arial, Verdana;
-	letter-spacing: -0.55vw;
+	letter-spacing: -0.45vw;
 	margin: 0 10%;
 	padding: 0;
-	top: 22%;
+	top: 30%;
 	text-shadow: 2px 2px 2px #000, -1px -1px 2px rgba(0,0,0,.5);
 	z-index: 1;
 }
@@ -272,22 +285,26 @@ article p {
 	text-shadow: 1px 1px 1px #f5f5f5;
 }
 
-article p:first-letter {
-	font-size: 150%;
-}
-
-.tools {
+.tools-area {
 	text-align: center;
+	width: 100%;
 }
 
-.tools img {
-	width: 25%;
-	padding: 10px;
+.tools-area img {
+	display: inline-block;
+	width: 20%;
+	margin: 10px;
+	transition: transform .5s;
+	-webkit-transition: transform .5s;
+}
+
+.tools-area img:hover {
+	transform: scale(1.1) skew(-2deg);
 }
 
 blockquote {
-	font-size: 150%;
-	font-size: 3vw;
+	font-size: 130%;
+	font-size: 2.3vw;
 	padding: 0 10%;
 	text-align: center;
 	font-style: italic;
@@ -315,6 +332,10 @@ article li {
 	padding: .25em .5em;
 }
 
+strong {
+	letter-spacing: 1px;
+}
+
 a {
 	color: #69340A;
 }
@@ -327,15 +348,11 @@ form {
 label {
 	display: block;
 	width: 50%;
-	letter-spacing: .1em;
-	text-transform: uppercase;
-	color: #fff;
-	font-size: 130%;
-	border-top-left-radius: 4px;
+	font-size: 110%;
 	text-indent: .5em;
-	background: #E28710;
-	text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.8);
-	box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5), -1px -1px 1px rgba(0, 0, 0, 0.5)
+	padding: 2px;
+	box-sizing: border-box;
+	background: #FA980E;
 }
 
 label[for="message"] {
@@ -350,9 +367,7 @@ input[type=text], input[type=email], textarea {
 	padding: .5em;
 	box-sizing: border-box;
 	border: 1px rgba(0, 0, 0, 0.5) solid;
-	font-size: 80%;
 	background: rgba(255,255,255,.8);
-	box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5), -1px -1px 1px rgba(0, 0, 0, 0.5)
 }
 
 textarea {
@@ -362,10 +377,10 @@ textarea {
 
 input[type=submit] {
 	float: right;
-	background: #E28710;
-	border-radius: 8px;
+	background: #FA980E;
 	border:1px solid #623f1d;
 	font-size: 100%;
+	cursor: pointer;
 	padding: .2em .5em;
 }
 
@@ -393,7 +408,7 @@ input[type=submit] {
           animation-fill-mode: both;
 }
 
-@media (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
 	header {
 		height: 50px;
 		width: 100%;
@@ -434,7 +449,7 @@ input[type=submit] {
 
 	.menu {
 		width: 60%;
-		font-size: 8vmin;
+		font-size: 8.5vmin;
 		transform: translate3d(-100%, 0, 0);
 		-webkit-transform: translate3d(-100%, 0, 0);
 	}
@@ -449,20 +464,21 @@ input[type=submit] {
 	}
 
 	.heading span {
-		top: 50%;
+		top: 40%;
+		font-size: 7vw;
 	}
 
 	article {
 		width: 100%;
 		margin: 0;
 	}
-
-	.tools {
-		padding: 0 1em;
+	
+	li {
+		font-size: 80%;
 	}
 
-	.tools img {
-		width: 45%;
+	.tools-area img {
+		width: 35%;
 	}
 
 	form {
@@ -475,12 +491,29 @@ input[type=submit] {
 	}
 	
 	blockquote {
-		font-size: 150%;
+		font-size: 130%;
 		margin: .5em 0;
 	}
 	
 	.hide-on-mobile {
 		display: none;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.heading span {
+		top: 50%;
+	}
+}
+
+@media screen and (max-width: 1024px) and (orientation:landscape) {
+	/* Fixes menu in landscape mode */
+	.menu {
+		background-position:  -16% -18%;
+	}
+	
+	.menu-list {
+		top: 0;
 	}
 }
 
