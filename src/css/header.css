@@ -1,0 +1,25 @@
+header {
+	backface-visibility: hidden;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 2;
+	display: inline-block;
+	height: 81px;
+	width: 70%;
+	color: #fff;
+	margin-left: 28%;
+	padding: 0;
+	background: $transparent-black;
+    h1 {
+	   margin-left: 1em;
+       @media $medium-screens {
+            margin-left: 0.5em;
+       }
+    }
+    @media $medium-screens {
+        height: 50px;
+        width: 100%;
+        margin: 0;
+    }
+}

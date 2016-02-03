@@ -1,0 +1,50 @@
+@media print {
+	article {
+		margin: 0;
+		width: 100%;
+	}
+
+	nav, .menu-button {
+		display: none;
+	}
+
+	header {
+		width: 100%;
+		position: static;
+		margin: 0;
+	}
+
+	ul {
+		list-style: circle;
+	}
+
+	li {
+		padding: 0;
+	}
+
+	.heading {
+		position: static;
+	}
+
+	.heading img {
+		display: none;
+	}
+
+	.heading h2 {
+		text-indent: 0;
+		margin: 0;
+		padding-top: 2em;
+	}
+
+	h1 a {
+		color: #000;
+	}
+
+	.hide-on-mobile {
+		display: inline;
+	}
+
+	form {
+		display: none;
+	}
+}

@@ -1,0 +1,13 @@
+<div id="@@id" class="heading">
+    @@if (typeof headingLevel === "undefined" || headingLevel === 2) {
+        <h2>@@title</h2>
+    }
+    @@if (typeof headingLevel !== "undefined" && headingLevel === 1) {
+        <h1>@@title</h1>
+    }
+    @@if (typeof headingLevel !== "undefined" && headingLevel === 3) {
+        <h3>@@title</h3>
+    }
+    <span>@@visible-title</span>
+    <img src="@@background.jpg" srcset="@@background-600.jpg 600w, @@background.jpg 1024w" sizes="(max-width: 600px) 100vw, 75vw" alt="@@title">
+</div>

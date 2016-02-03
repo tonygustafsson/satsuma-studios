@@ -1,0 +1,14 @@
+.footer {
+	text-align: right;
+	font-style: italic;
+	clear: both;
+	padding: 2em 1em;
+}
+
+.footer:first-letter {
+	font-size: 100%;
+}
+
+.noshow {
+	display: none;
+}
