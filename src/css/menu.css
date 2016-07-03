@@ -21,10 +21,11 @@
 
 .menu {
 	backface-visibility: hidden;
-	transition: transform .2s linear, background-size .2s, background-position .2s;
+	transition: transform 100ms ease-in-out, background-size 100ms ease-in-out, background-position 100ms ease-in-out;
 	transform: translate3d(0,0,0);
-	background: rgba(0,0,0,.9) url('../img/satsuma-logo.svg') no-repeat 50% 5%;
-	background-size: 40% auto;
+	background: rgba(0,0,0,.9) url('../img/satsuma-logo.svg') no-repeat;
+	background-size: 40% 40%;
+	background-position: 50% -10%;
 	color: #fff;
 	position: fixed;
 	top: 0;
@@ -33,7 +34,7 @@
 	text-align: center;
 	height: 100%;
 	font-weight: bold;
-	font-size: 2.4vw;
+	font-size: 2vw;
 	font-family: $font-default;
 	letter-spacing: -0.2vw;
 	z-index: 1;
@@ -53,8 +54,8 @@
         padding: 0;
     }
     &:hover {
-        background-size: 45% auto;
-        background-position: 50% 4%;
+        background-size: 45% 45%;
+        background-position: 50% -15%;
     }
     @media $medium-screens {
 		width: 60%;
@@ -86,6 +87,6 @@
 }
 
 .facebook-logo {
-	width: 50px;
+	width: 40px;
 	padding-top: 20px;
 }
