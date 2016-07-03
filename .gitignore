@@ -1,4 +1,6 @@
 # Dependency directory
 node_modules
-/app/css
-/app/js
+app/css/*.css
+app/js/*.js
+app/index.html
+blog/**
