@@ -4,12 +4,13 @@
 
 	var speed = 500,
     currentUrl = window.location.href,
+    baseUrl = 'http://www.satsuma.se/',
 	moving_frequency = 15,
 	links = document.getElementsByTagName('a'),
 	href,
 	i;
 
-    if (currentUrl.indexOf('.html') > -1) {
+    if (currentUrl.indexOf('.html') > -1 && currentUrl.indexOf('index.html') === -1) {
         // Only run on start page
         return;
     }
@@ -32,7 +33,7 @@
 				var element,
 				href = this.attributes.href.value.toString();
 
-				if (element = document.getElementById(href.substr(23))) {
+				if (element = document.getElementById(href.substr(baseUrl.length + 1))) {
 					var hop_count = speed / moving_frequency,
 					getScrollTopDocumentAtBegin = document.documentElement.scrollTop + document.body.scrollTop,
 					gap = (getScrollTopElement(element) - getScrollTopDocumentAtBegin) / hop_count,
