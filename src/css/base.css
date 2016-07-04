@@ -28,9 +28,6 @@ ul {
 	color: #111;
     li {
         padding: .25em .5em;
-        @media $medium-screens {
-		      font-size: 80%;
-        }
     }
 }
 

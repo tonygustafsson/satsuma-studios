@@ -75,7 +75,7 @@ ul.no-bullets {
     }
     @media $small-screens {
         width: 90%;
-        padding: 0 2.5% 35em 2.5%;
+        padding: 0 2.5% 5em 2.5%;
     }
 }
 
