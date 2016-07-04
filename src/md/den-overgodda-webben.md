@@ -1,4 +1,4 @@
-_Skrivet av Tony Gustafsson 2016-01-26._
+_Skrivet av Tony Gustafsson 2016-02-03._
 
 ## Problemet långsamma webbplatser
 
