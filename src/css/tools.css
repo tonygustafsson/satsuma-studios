@@ -28,9 +28,9 @@ ul.no-bullets {
 }
 
 .blog-list {
-    padding-bottom: 20em;
     width: 80%;
     padding: 0 10%;
+    margin-bottom: 25em;
     li {
         float: left;
         min-height: 190px;
