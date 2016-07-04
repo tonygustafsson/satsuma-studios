@@ -35,13 +35,16 @@ ul.no-bullets {
 }
 
 .blog-list {
+    padding-bottom: 20em;
     li {
+        float: left;
         min-height: 190px;
         width: 45%;
+        margin: 1em 2%;
         box-sizing: border-box;
         border: 1px $transparent-black-light solid;
         padding: 0;
-        border-radius: 50%/5%;
+        border-radius: 0 0 50% 50% / 0 0 5% 5%;
         @media $small-screens {
             width: 100%;
         }
@@ -76,7 +79,7 @@ ul.no-bullets {
     }
     @media $small-screens {
         width: 90%;
-        padding: 0 5%;
+        padding: 0 2.5% 35em 2.5%;
     }
 }
 
