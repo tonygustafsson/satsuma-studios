@@ -1,7 +1,7 @@
 body {
 	margin: 0;
 	padding: 0;
-	font-size: 20px;
+	font-size: 18px;
 }
 
 img {
@@ -10,9 +10,9 @@ img {
 }
 
 article {
-	margin-left: 28%;
+	margin-left: 33%;
 	padding: 0;
-	width: 70%;
+	width: 60%;
     @media $medium-screens {
         width: 100%;
 		margin: 0;
@@ -69,6 +69,7 @@ form {
     background: $cream;
     border: 1px $transparent-black-light solid;
     padding: 1.5em;
+    margin-top: 3em;
     padding-bottom: 3em;
     @media $medium-screens {
 		width: 100%;
@@ -78,7 +79,6 @@ form {
 
 label {
 	display: block;
-	font-size: 110%;
     font-family: $font-default;
     @media $medium-screens {
         width: 100%;
@@ -106,9 +106,19 @@ textarea {
 
 input[type=submit] {
 	float: right;
-	background: $orange;
-	border: 1px solid $brown;
-	font-size: 120%;
-	cursor: pointer;
-	padding: .2em .5em;
+    padding: .375rem 1rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .3rem;
+    border: 1px #000 solid;
+    background-color: $orange;
+    color: #000;
+    display: inline-block;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
 }

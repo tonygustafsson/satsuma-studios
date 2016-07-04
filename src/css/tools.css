@@ -3,13 +3,6 @@
 	margin-right: 1em;
 }
 
-.brick {
-    background: $cream;
-    padding: 1em 10%;
-    border-radius: 7px;
-    border: 1px $transparent-black-light solid;
-}
-
 .tools-area {
 	text-align: center;
 	width: 100%;
@@ -36,15 +29,18 @@ ul.no-bullets {
 
 .blog-list {
     padding-bottom: 20em;
+    width: 80%;
+    padding: 0 10%;
     li {
         float: left;
         min-height: 190px;
-        width: 45%;
-        margin: 1em 2%;
+        width: 40%;
         box-sizing: border-box;
         border: 1px $transparent-black-light solid;
         padding: 0;
-        border-radius: 0 0 50% 50% / 0 0 5% 5%;
+        margin: 0 2%;
+        vertical-align: top;
+        border-radius: 50%/5%;
         @media $small-screens {
             width: 100%;
         }
@@ -105,11 +101,11 @@ ul.no-bullets {
     @media $medium-landscape-screens {
         position: absolute;
         left: .2em;
-        bottom: 0;        
+        bottom: 0;
     }
 }
 
-@media $medium-screens {	
+@media $medium-screens {
 	.hide-on-mobile {
 		display: none;
 	}

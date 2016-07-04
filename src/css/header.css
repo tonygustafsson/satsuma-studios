@@ -6,9 +6,9 @@ header {
 	z-index: 2;
 	display: inline-block;
 	height: 81px;
-	width: 70%;
+	width: 60%;
 	color: #fff;
-	margin-left: 28%;
+	margin-left: 33%;
 	padding: 0;
 	background: $transparent-black;
     h1 {
