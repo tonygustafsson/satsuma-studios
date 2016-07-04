@@ -1,6 +1,10 @@
 <IfModule mod_rewrite.c>
 	RewriteEngine On
 	RewriteBase /
+	
+	#Redirect non www request to www for SEO
+	RewriteCond %{HTTP_HOST} !^www\.
+	RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]
 </IfModule>
 
 <IfModule mod_expires.c>
