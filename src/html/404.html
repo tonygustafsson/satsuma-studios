@@ -1,0 +1,22 @@
+@@include("../html-templates/top.html", {
+    "csspath": "css",
+    "imgpath": "img",
+    "title": "Sidan kunde inte hittas! | Satsuma Studios",
+    "description": "Sidan kunde inte hittas"
+})
+
+@@include("../html-templates/heading.html", {
+    "id": "notfound",
+    "title": "Sidan kunde inte hittas",
+    "visible-title": "Sidan kunde inte hittas",
+    "background": "img/headings/404-not-found"
+})
+
+<p>
+    Tyvärr kunde inte sidan du letade efter hittas.
+    Se om du kan hitta vad du söker i menyn till vänster.
+</p>
+
+@@include("../html-templates/bottom.html", {
+    "jspath": "js"
+})
