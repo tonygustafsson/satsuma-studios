@@ -86,6 +86,7 @@
 	max-width: 40%;
 	height: auto;
 	padding: 1em 0;
+	user-select: none;
 	user-drag: none;
 	-webkit-user-drag: none;
 	transition: transform 200ms ease-in-out;
