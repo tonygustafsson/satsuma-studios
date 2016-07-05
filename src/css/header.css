@@ -10,7 +10,7 @@ header {
 	color: #fff;
 	margin-left: 33%;
 	padding: 0;
-	background: $transparent-black;
+	background: $gray-dark;
     h1 {
 	   margin-left: 1em;
        @media $medium-screens {
