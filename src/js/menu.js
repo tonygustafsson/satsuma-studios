@@ -3,8 +3,9 @@
 
 	var menu = document.getElementById('menu'),
 		menuButton = document.getElementById('menu-button'),
-		body = document.getElementsByTagName('body')[0];
-		
+		body = document.getElementsByTagName('body')[0],
+		satsumaLogo = document.getElementById('satsuma-menu-logo');
+
 	menuButton.addEventListener('click', function (e) {
 		e.preventDefault();
 
@@ -16,6 +17,14 @@
 			menu.className = "menu active-menu";
 			menuButton.style.zIndex = "1";
 		}
+	});
+
+	menu.addEventListener('mouseover', function (e) {
+		satsumaLogo.className = 'satsuma-menu-logo satsuma-menu-logo-large';
+	});
+
+	menu.addEventListener('mouseout', function (e) {
+		satsumaLogo.className = 'satsuma-menu-logo';
 	});
 
 	function closeStartMenu (e) {
