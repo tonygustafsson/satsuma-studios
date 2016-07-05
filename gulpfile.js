@@ -8,7 +8,6 @@ const cssimport = require('postcss-import');
 const cssnext = require("postcss-cssnext")
 const simplevars = require('postcss-simple-vars');
 const nestedcss = require('postcss-nested');
-const autoprefixer = require('autoprefixer');
 const mqpacker = require('css-mqpacker');
 const cssmin = require('gulp-cssmin');
 
@@ -43,7 +42,6 @@ gulp.task('css', function () {
     var processors = [
         cssnext,
         cssimport,
-        autoprefixer,
         nestedcss,
         simplevars,
         mqpacker
