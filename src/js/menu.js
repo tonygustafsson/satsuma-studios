@@ -27,6 +27,14 @@
 		satsumaLogo.className = 'satsuma-menu-logo';
 	});
 
+	satsumaLogo.addEventListener('click', function (e) {
+		satsumaLogo.className = 'satsuma-menu-logo shake';
+		
+		setTimeout(function () {
+			satsumaLogo.className = 'satsuma-menu-logo satsuma-menu-logo-large';
+		}, 1200);
+	});
+
 	function closeStartMenu (e) {
 		if (e.target === menuButton || e.target.parentNode === menuButton) {
 			return;
