@@ -23,6 +23,15 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.icon-mail4:before {
+    content: "\ea86";
+}
+.icon-cross:before {
+    content: "\ea0f";
+}
+.icon-checkmark:before {
+    content: "\ea10";
+}
 .icon-menu:before {
-	content: "\e9bd";
+    content: "\e9bd";
 }
