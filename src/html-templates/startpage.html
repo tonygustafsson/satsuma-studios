@@ -32,7 +32,7 @@
 <blockquote>
     "Perfection is achieved, not when there is nothing more to add, but when there is nothing left to take away." - Antoine de Saint-Exupery
 </blockquote>
-            
+
 @@include("../html-templates/heading.html", {
     "id": "services",
     "title": "Tjänster och paketerbjudanden",
@@ -65,35 +65,25 @@
         <th>Funktionalitet</th>
         <th>Ingår</th>
     </tr>
-    
+
     <tr>
-        <td>Hjälp med domänregistrering och köp av webbhotell.</td>
+        <td>Hjälp med domänregistrering och köp av webbhotell. Endast arbetstiden ingår.</td>
         <td><span class="icon-checkmark"></span></td>
     </tr>
 
     <tr>
-        <td>Wordpressinstallation och konfiguration.</td>
+        <td>Wordpressinstallation och konfiguration efter behov.</td>
         <td><span class="icon-checkmark"></span></td>
     </tr>
 
     <tr>
-        <td>4 timmars arbetsinsats för anpassning av ett färdigt tema från <a href="http://www.wordpress.com">wordpress.com</a> (du väljer!)</td>
-        <td><span class="icon-checkmark"></span></td>
-    </tr>
-
-    <tr>
-        <td>Bollplank gällande användbarhet och tillgänglighet.</td>
-        <td><span class="icon-checkmark"></span></td>
-    </tr>
-
-    <tr>
-        <td>En enkel och personlig guide för hur du gör det du vill göra i framtiden.</td>
+        <td>Fyra timmars arbetsinsats för anpassning av ett färdigt tema som kund valt eller godkänt.</td>
         <td><span class="icon-checkmark"></span></td>
     </tr>
 
     <tr>
         <td>
-            Installation och konfiguration av bra tillägg, som <a href="https://wordpress.org/plugins/contact-form-7/">Contact Form 7</a>
+            Installation och konfiguration av bra tillägg efter behov, som <a href="https://wordpress.org/plugins/contact-form-7/">Contact Form 7</a>
             <a href="https://sv.wordpress.org/plugins/wp-super-cache/">WP Super Cache</a>,
             <a href="https://yoast.com/wordpress/plugins/seo/">Yoast SEO</a>,
             <a href="https://sv.wordpress.org/plugins/google-sitemap-generator/">Sitemap XML</a> och
@@ -103,7 +93,7 @@
     </tr>
 
     <tr>
-        <td>Registrering på Google och andra stora sökmotorer.</td>
+        <td>Registrering på Google och andra stora sökmotorers index.</td>
         <td><span class="icon-checkmark"></span></td>
     </tr>
 
@@ -123,12 +113,12 @@
     </tr>
 
     <tr>
-        <td>Uppsättning av backuper av Wordpress.</td>
+        <td>En enkel och personlig dokumentation för hur du hanterar de anpassningar som går utanför Wordpress standard.</td>
         <td><span class="icon-checkmark"></span></td>
     </tr>
 
     <tr>
-        <td>Uppföljning, hur har det gått? vad saknas?</td>
+        <td>Rådgivning kring idéer för framtiden, användbarhet, tillgänglighet, sökmotorsoptimering, design m.m.</td>
         <td><span class="icon-checkmark"></span></td>
     </tr>
 </table>
@@ -147,9 +137,10 @@
 <ul>
     <li>Support efter paketköp.</li>
     <li>Specialanpassningar av tema, exempelvis mobilanpassningar.</li>
+    <li>Automatiska backuper av innehåll.</li>
     <li>Skapande av helt nytt tema.</li>
+    <li>Säker uppgradering av Wordpress, plugins och teman.</li>
     <li>Skapande av plugin för integration och funktioner.</li>
-    <li>JavaScriptfunktioner.</li>
     <li>PDF-generering.</li>
     <li>Integrationer till övriga system.</li>
     <li>E-postfunktioner, listor, spamhantering m.m.</li>
@@ -165,7 +156,22 @@
 </p>
 
 <p>
-    Undrar du om vi kan leverera det du söker, eller vill diskutera prissättning, så kan du gärna <a href="@@baseurl#contact" title="Skriv oss en rad i formuläret.">kontakta oss</a>.
+    Exempel på vad vi erbjuder:
+</p>
+
+<ul>
+    <li>Utveckling i PHP och JavaScript.</li>
+    <li>Design i HTML och CSS.</li>
+    <li>Integrationer mot sociala nätverk och APIer, OAUTH2.</li>
+    <li>Adwordshjälp.</li>
+    <li>Google Analytics &amp; dataanalys.</li>
+    <li>Förbättringar av webbprestanda.</li>
+    <li>Sökmotorsoptimeringar.</li>
+    <li>Hjälp med servrar, webbhotell, domäner, m.m.</li>
+</ul>
+
+<p>
+    Undrar du om vi kan leverera det du söker så kan du gärna <a href="@@baseurl#contact" title="Skriv oss en rad i formuläret.">kontakta oss</a>.
 </p>
 
 @@include("../html-templates/heading.html", {
@@ -223,7 +229,7 @@
         "description": "I Januari 2016 avslutades supporten för samtliga Internet Explorer tidigare än version 11. Vi på Satsuma jublar, dansar och applåderar - läs varför!",
         "date": "2016-02-04"
     })
-    
+
     @@include("../html-templates/blog-list.html", {
         "img": "@@imgpath/blog/den-overgodda-webben-header-600.jpg",
         "title": "Den övergödda webben",
@@ -248,15 +254,15 @@
 <form method="post" action="contact.php">
     <label for="name">Namn</label>
     <input pattern=".{3,80}" title="3-80 tecken" id="name" name="name" type="text" required="">
-    
+
     <label for="email">E-postadress</label>
     <input id="email" name="email" type="email" required="">
-    
+
     <label for="url" class="noshow">Webadress</label>
     <input id="url" name="url" type="text" class="noshow">
-    
+
     <label for="message">Meddelande</label>
     <textarea id="message" name="message" required=""></textarea>
-    
+
     <input type="submit" value="Skicka">
 </form>
