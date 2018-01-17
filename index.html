@@ -130,12 +130,12 @@
 				<p>Är du nyfiken på oss, har en fundering eller vill ha en offert så använd formuläret nedan.</p>
 			</header>
 
-			<form method="post" action="#">
+			<form method="post" action="contact.php">
 				<div class="row 50%">
-					<div class="6u 12u$(mobile)"><input type="text" class="text" name="name" placeholder="Namn" /></div>
-					<div class="6u$ 12u$(mobile)"><input type="text" class="text" name="email" placeholder="E-postadress" /></div>
+					<div class="6u 12u$(mobile)"><input type="text" class="text" name="name" placeholder="Namn" required /></div>
+					<div class="6u$ 12u$(mobile)"><input type="email" class="text" name="email" placeholder="E-postadress" required /></div>
 					<div class="12u$">
-						<textarea name="message" placeholder="Meddelande"></textarea>
+						<textarea name="message" placeholder="Meddelande" required></textarea>
 					</div>
 					<div class="12u$">
 						<ul class="actions">
