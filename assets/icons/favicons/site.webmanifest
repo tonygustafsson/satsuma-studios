@@ -1,5 +1,6 @@
 {
-    "name": "",
+    "name": "Satsuma",
+    "short_name": "Satsuma",
     "icons": [
         {
             "src": "/assets/icons/favicons/android-chrome-192x192.png",
